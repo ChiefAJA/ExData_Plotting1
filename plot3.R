@@ -1,6 +1,6 @@
 png(file = "plot3.png") #open file to write
 
-#load power consumption data
+#load power consumption data  - assumes household_power_consumption.txt is in a folder called Data 
 data <- tbl_df(read.table("Data/household_power_consumption.txt", header = TRUE, sep=";", na.strings = c("?","")))
 
 #adjust Date and Time variables to date/time classes
