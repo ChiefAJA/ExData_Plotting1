@@ -1,6 +1,6 @@
 png(file = "plot1.png")  #open file to write to 
 
-## grab data from .txt file 
+## grab data from .txt file - assumes household_power_consumption.txt is in a folder called Data  
 data <- tbl_df(read.table("Data/household_power_consumption.txt", header = TRUE, sep=";", na.strings = c("?","")))
 
 #convert date variable 
